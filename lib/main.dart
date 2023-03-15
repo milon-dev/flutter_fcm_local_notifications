@@ -19,11 +19,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter FCM Local Notifications',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter FCM Local Notifications'),
     );
   }
 }
@@ -44,21 +44,21 @@ class _MyHomePageState extends State<MyHomePage> {
     // 1. This method call when app in terminated state and you get a notification when you click on notification app open from terminated state and you can get notification data in this method
     FirebaseMessaging.instance.getInitialMessage().then((message) {
       if (message != null) {
-        print('Handling a terminated message: ${message.notification!.body}');
+        print('=====>>> Handling a terminated message: ${message.notification!.body}');
       }
     });
 
     // 2. This method only call when App in foreground it mean app must be opened
     FirebaseMessaging.onMessage.listen((message) {
       if (message.notification != null) {
-        print('Handling a foreground message: ${message.notification!.body}');
+        print('=====>>> Handling a foreground message: ${message.notification!.body}');
       }
     });
 
     // 3. This method only call when App in background and not terminated(not closed)
     FirebaseMessaging.onMessageOpenedApp.listen((message) {
       if (message.notification != null) {
-        print('Handling a background message: ${message.notification!.body}');
+        print('=====>>> Handling a background message: ${message.notification!.body}');
       }
     });
 
