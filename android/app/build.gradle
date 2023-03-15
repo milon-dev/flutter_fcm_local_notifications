@@ -51,7 +51,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.milonsheikh.flutter_firebase_push_notification"
+        applicationId "com.milonsheikh.flutter_fcm_local_notifications"
         minSdkVersion 21
         compileSdkVersion 33
         targetSdkVersion 33

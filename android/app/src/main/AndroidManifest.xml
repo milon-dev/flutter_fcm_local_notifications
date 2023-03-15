@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.milonsheikh.flutter_firebase_push_notification">
+    package="com.milonsheikh.flutter_fcm_local_notifications">
    <application
-        android:label="flutter_firebase_push_notification"
+        android:label="LOCAL Noti"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

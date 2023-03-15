@@ -1,4 +1,4 @@
-# flutter_firebase_push_notification
+# flutter_fcm_local_notifications
 
 A new Flutter project.
 
